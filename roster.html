@@ -88,6 +88,9 @@
 				  			//exclude guild rank 2 because that has become a rank for officer alt characters
 				  			if(myJson.members[i].rank !== 2 && myJson.members[i].rank < 5 )
 				  			{	
+				  				if (myJson.members[i].character.name === "Saeisgay")	//should be demoted or kicked soon	
+									++i;
+								
 				  				img += myJson.members[i].character.thumbnail;
 								table += '<tr><td><img src="https://render-us.worldofwarcraft.com/character/'+img+'"alt= "character tnail" style="width:80px;height:80px;border:0;"></td>';
 								img = '';
