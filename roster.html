@@ -61,10 +61,10 @@
 		var token;
 		async function start(){	
 			//client id may have expired -- fixed 9/3/19
-			const resp = await fetch("https://us.battle.net/oauth/token", { 
+			const resp = await fetch("https://us.battle.net/oauth/token", {
 			  body: "grant_type=client_credentials",
 			  headers: {
-			    Authorization: "Basic ODExNmYzNGI1NmY2NGM4ZTlkMDJhYWI2MjY1MjNjMzU6NFUyclFiOFNrM3RjaEhUOEMwakQ5TTdJc1d6TWt2Q3I=",
+			    Authorization: "Basic ODExNmYzNGI1NmY2NGM4ZTlkMDJhYWI2MjY1MjNjMzU6d2FscVFOYTBTZjRKa0MweTBxSllHNk5tRjFuYjJTd3A=",
 			    "Content-Type": "application/x-www-form-urlencoded"
 			  },
 			  method: "POST"
