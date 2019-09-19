@@ -1,0 +1,101 @@
+
+.navbar-brand {
+	display: inline-block;	
+	text-decoration-line: none;
+	border-right: 0px 15px solid white;
+	border-width: 2px;
+}
+
+.nav-item{
+	display: inline-block;	
+
+	font-size: 25px;
+	margin-right: 10px;
+	text-decoration-line: none;
+	padding:0px 20px;
+	border-width: 2px;
+}
+
+table{
+	border-spacing: 75px 0px;
+	line-height: 30px;
+	width: 40%;
+	color: black;
+	font-size: 13pt;
+	font-family: Helvetica;
+	font-weight: bold;
+	background-color: #007bff;
+	margin: auto;
+	table-layout: auto;
+	border-color: black;
+	text-align: center;
+}
+strong{
+	font-size: 25px;
+}
+
+#roster-div{
+	margin: 25px 0px;
+}
+
+#roster{
+	color: white;
+	background-color:transparent;
+}
+
+#roster-table, #roster-style{
+	
+	line-height: 20px;
+	width: 30%;
+	color: black;
+	font-size: 13pt;
+	font-family: Helvetica;
+	font-weight: bold;
+	background-color: #007bff;
+	border-color: black;
+	text-align: center;
+}
+tr {
+	border-style: solid;
+	border-bottom-color: white;
+	border-bottom-width: thin;
+}
+td{
+	
+}
+
+head{
+
+}
+
+
+img {
+	margin: auto;
+	height: 250px;
+	width: 250px;
+}
+h1 {
+	color: white;
+	font-family: sans-serif;
+	text-align: center;
+}
+
+#roster-body{
+	min-width: 375px;
+	min-height: 812px;
+	text-align: center;
+	cursor: default;
+	/*background-image: url(https://i.ytimg.com/vi/-S4aMLiAX4k/maxresdefault.jpg);*/
+	
+}
+
+body{
+	background-color: transparent;
+}
+
+html{
+	
+	background-image: url(https://i.ytimg.com/vi/-S4aMLiAX4k/maxresdefault.jpg);	
+	background-size: 1920px 1080px;
+	
+}

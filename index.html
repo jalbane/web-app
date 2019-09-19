@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<title>NFA - Lightbringer</title>
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+		<link rel="stylesheet" type ="text/css" href="style.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1" /> 
+	</head>
+	
+	<body>
+	 <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+	  <a class="navbar-brand" href="#"></a>
+	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+	    <span class="navbar-toggler-icon"></span>
+	  </button>
+	  <div class="collapse navbar-collapse" id="navbarNavDropdown">
+	    <ul class="navbar-nav">
+	      <li class="nav-item active">
+	        <a class="nav-link" href="index.html">Home<span class="sr-only"></span></a> 
+	      </li>
+	      <li class="nav-item">
+	        <a class="nav-link" href="https://docs.google.com/forms/d/1c8TH8U6ZSp-dzsl0EnPAf5Vmkvd8Hj53mSh5N0H50YM/edit">Apply</a>
+	      </li>
+	      <li class="nav-item">
+	        <a class="nav-link" href="roster.html">Roster</a>
+	      </li>
+	      <li class="nav-item dropdown">
+	        <a class="nav-link dropdown-toggle" href="" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+	          Additional Links
+	        </a>
+	        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+	          <a id = "tag" class="dropdown-item" href="https://raider.io/guilds/us/lightbringer/NFA" target ="_blank">Raider.IO</a>
+	          <a id = "tag" class="dropdown-item" href="https://www.wowprogress.com/guild/us/lightbringer/NFA" target ="_blank">Wow progress</a>
+	          <a id = "tag" class="dropdown-item" href="https://www.warcraftlogs.com/guild/reports-list/357706/" target ="_blank">Warcraft logs</a>
+	        </div>
+	      </li>
+	    </ul>
+	  </div>
+	</nav>
+</body>
+			<h1> No Fun Allowed - Lightbringer (US) </h1>
+				<table >
+				  <thead>
+				    <tr>
+				      <th scope="col">Raid</th>
+				      <th scope="col">Progress</th>
+				      <th scope="col">Realm</th>
+				      <th scope="col">World</th>
+				    </tr>
+				  </thead>
+				  <tbody>
+				    <tr>
+				      <th  scope="row">Uldir</th>
+				      <td id = "progress"></td>
+				      <td id = "uldir-realm"> </td>
+				      <td id = "uldir-world"></td>
+				    </tr>
+				    <tr>
+				      <th scope="row">Battle of Dazar'alor</th>
+				      <td id="progress2"></td>
+				      <td id = "battle-realm"></td>
+				      <td id = "battle-world"></td>
+				    </tr>
+				 	<tr>
+				      <th scope="row">Crucible of Storms</th>
+				      <td id="progress3"></td>
+				      <td id = "cruc-realm"></td>
+				      <td id = "cruc-world"></td>
+				  	</tr>
+				  	<tr>
+				  		<th scope= "row"> The Eternal Palace</th>
+				  		<td id = "progress4"></td>
+				  		<td id = "ep-realm"></td>
+				  		<td id = "ep-world"></td>
+				  	</tr>
+				  </tbody>
+				</table>
+			
+		<script>
+			
+				fetch('https://raider.io/api/v1/guilds/profile?region=US&realm=Lightbringer&name=NFA&fields=raid_progression')
+				  .then(function(response) {
+				    return response.json();
+				  }).then(function(ViewGuildProfileResponse){
+				  	
+				  	document.getElementById("progress").innerHTML = ViewGuildProfileResponse.raid_progression.uldir.summary;
+				  	document.getElementById("progress2").innerHTML= ViewGuildProfileResponse.raid_progression["battle-of-dazaralor"].summary;
+					document.getElementById("progress3").innerHTML= ViewGuildProfileResponse.raid_progression["crucible-of-storms"].summary;
+					document.getElementById("progress4").innerHTML= ViewGuildProfileResponse.raid_progression["the-eternal-palace"].summary;
+				  	});
+				    
+				    fetch('https://raider.io/api/v1/guilds/profile?region=US&realm=Lightbringer&name=NFA&fields=raid_rankings')
+				  .then(function(response) {
+				    return response.json();
+				  }).then(function(ViewGuildProfileResponse){
+				  	
+				  	document.getElementById("uldir-realm").innerHTML = ViewGuildProfileResponse.raid_rankings.uldir.mythic.realm;
+				  	document.getElementById("uldir-world").innerHTML = ViewGuildProfileResponse.raid_rankings.uldir.mythic.world;
+				  	document.getElementById("battle-realm").innerHTML= ViewGuildProfileResponse.raid_rankings["battle-of-dazaralor"].mythic.realm;
+				  	document.getElementById("battle-world").innerHTML= ViewGuildProfileResponse.raid_rankings["battle-of-dazaralor"].mythic.world;
+				  	document.getElementById("cruc-realm").innerHTML= ViewGuildProfileResponse.raid_rankings["crucible-of-storms"].heroic.realm;
+				  	document.getElementById("cruc-world").innerHTML= ViewGuildProfileResponse.raid_rankings["crucible-of-storms"].heroic.world;
+				  	document.getElementById("ep-realm").innerHTML= ViewGuildProfileResponse.raid_rankings["the-eternal-palace"].mythic.realm;
+				  	document.getElementById("ep-world").innerHTML= ViewGuildProfileResponse.raid_rankings["the-eternal-palace"].mythic.world;
+				  	});
+			
+		</script>
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+	
+	
+</html>
