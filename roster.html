@@ -92,8 +92,8 @@
 				  			{	
 				  				if (myJson.members[i].character.name === "Saeisgay")	//should be demoted or kicked soon	
 									i++;
-
-								table += '<tr><td><div class = "pic' + i + '"> <img src="https://render-us.worldofwarcraft.com/character/'+ myJson.members[i].character.thumbnail +'"alt= "character tnail" style="width:80px;height:80px;border:0;"><div class="overlay"><a id = "redirect" href="https://raider.io/mythic-dungeon-international/summer-2019-time-trials/east-3"><img src = "https://cdnassets.raider.io/images/fb_app_image.jpg?2018-01-22" style=width:20px;height:20px;border:0;" </a> </div></div></td>';
+								console.log(i);
+								table += '<tr><td><div class = "pic' + i + '"> <img src="https://render-us.worldofwarcraft.com/character/'+ myJson.members[i].character.thumbnail +'"alt= "character tnail" style="width:80px;height:80px;border:0;"><div class="overlay' + i + '"><a id = "redirect" href="https://raider.io/characters/us/lightbringer/' + myJson.members[i].character.name + '" target = "_blank"><img id = "io" src = "https://cdnassets.raider.io/images/fb_app_image.jpg?2018-01-22" style = "width: 22px;height:20px;border:0px;"</a> </div></div></td>';
 				  				table += '<td><strong>' + myJson.members[i].character.name + '</strong></td>';	
 				  				
 								try {

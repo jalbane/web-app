@@ -35,9 +35,6 @@ strong{
 }
 
 .roster-div{
-	height: 200px;
-	width: 100%;
-
 	
 }
 
@@ -56,6 +53,7 @@ strong{
 	font-weight: bold;
 	background-color: #007bff;
 	border-color: black;
+	border-width: thick;
 	text-align: center;
 }
 tr {
@@ -74,36 +72,34 @@ head{
 
 .overlay3{
   position: absolute;
-  top: 50px;
-  left: 700px;
+  top: 162px;
+  left: 705px;
   opacity: 0;
-  transition: 0.3s ease;
-
+  transition: 0.5s ease;
+ 	
 }
-.pic3:hover .overlay {
+.pic3:hover .overlay3 {
   opacity: .8;
-  transform: scale(1.5);
+  transform: scale(3.5);
 }
 
-/*.pic4:hover .overlay{
+.pic4:hover .overlay4{
   opacity: .8;
-  transform: scale(1.5);
-}*/
+  transform: scale(3.5);
+}
 
-/*.overlay4{
+.overlay4{
   position: absolute;
-  top: 240px;
-  left: 700px;
-  height: 0px;
-  width: 0px;
+  top: 247px;
+  left: 705px;
   opacity: 0;
-	transition: 0.3s ease;
+  transition: 0.5s ease;
 
-}*/
+}
 
 a#redirect:hover{
-	transform:scale(1.5);
-	transition: 0.1s;
+	height: 20px;
+	width: 20px;
 }
 
 .text {
@@ -113,11 +109,11 @@ a#redirect:hover{
   -ms-transform: translate(0%, 0%);
 }
 
-/*img {
+img {
 	margin: auto;
 	height: 250px;
 	width: 250px;
-}*/
+}
 h1 {
 	color: white;
 	font-family: sans-serif;
