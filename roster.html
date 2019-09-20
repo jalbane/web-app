@@ -41,7 +41,7 @@
 	</nav>
 
 	<p id = "roster">Roster is listed by characters of rank 'Raider' or higher. Alt characters of Officers & GM may be listed below.</p>
-	<div id ="roster-div">
+	<div class ="roster-div">
 		<table id="roster-style"> 
 			<thread>
 				<tr>
@@ -53,6 +53,7 @@
 				</tr>
 			</thread>
 			<tbody id = "roster-table">
+
 			</tbody>	
 		</table>
 	</div>
@@ -82,41 +83,40 @@
 				  .then(function(myJson){
 				  	
 				  		var i;
-				  		var img = '';
 				  		var table = '';
+
 				  		for (i = 0; i < myJson.members.length; i++){ 
+				  			
 				  			//exclude guild rank 2 because that has become a rank for officer alt characters
 				  			if(myJson.members[i].rank !== 2 && myJson.members[i].rank < 5 )
 				  			{	
 				  				if (myJson.members[i].character.name === "Saeisgay")	//should be demoted or kicked soon	
-									++i;
-								
-				  				img += myJson.members[i].character.thumbnail;
-								table += '<tr><td><img src="https://render-us.worldofwarcraft.com/character/'+img+'"alt= "character tnail" style="width:80px;height:80px;border:0;"></td>';
-								img = '';
+									i++;
+
+								table += '<tr><td><div class = "pic' + i + '"> <img src="https://render-us.worldofwarcraft.com/character/'+ myJson.members[i].character.thumbnail +'"alt= "character tnail" style="width:80px;height:80px;border:0;"><div class="overlay"><a id = "redirect" href="https://raider.io/mythic-dungeon-international/summer-2019-time-trials/east-3"><img src = "https://cdnassets.raider.io/images/fb_app_image.jpg?2018-01-22" style=width:20px;height:20px;border:0;" </a> </div></div></td>';
 				  				table += '<td><strong>' + myJson.members[i].character.name + '</strong></td>';	
 				  				
 								try {
 									if (myJson.members[i].character.spec.role === 'TANK')
-					  					table += '<td>' + 'Tank' + '</td>';
+					  					table += '<td>Tank</td>';
 					  						
 					  				else if (myJson.members[i].character.spec.role === 'HEALING')
-					  					table += '<td>' + 'Healer' + '</td>';
+					  					table += '<td>Healer</td>';
 					  						
 					  				else if (myJson.members[i].character.spec.role === 'DPS')
-					  					table += '<td>' + 'Damage' + '</td>';
+					  					table += '<td>Damage</td>';
 					  						
 					  				table += '<td>' + myJson.members[i].character.spec.name + '</td></tr>';	
 								} 
 								catch (e) {
 									if(e instanceof TypeError){
-										table += '<td>' + 'N/A' + '</td>';
-										table += '<td>' + 'N/A' + '</td>';
+										table += '<td>N/A</td>';
+										table += '<td>N/A</td>';
 									}
 								}
 				  			}
+				  			document.getElementById("roster-table").innerHTML = table;
 				  		}
- 						document.getElementById("roster-table").innerHTML = (table);
 				 });
 		}		
 		start();
@@ -124,6 +124,7 @@
 	</script>
 
 </body>
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.1/jquery.min.js"></script>
 		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
