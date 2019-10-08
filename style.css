@@ -70,7 +70,7 @@ head{
 }
 
 
-.overlay3{
+.overlay2{
   position: absolute;
   top: 162px;
   left: 705px;
@@ -78,23 +78,358 @@ head{
   transition: 0.5s ease;
  	
 }
-.pic3:hover .overlay3 {
+.pic2:hover .overlay2 {
   opacity: .8;
   transform: scale(3.5);
 }
 
-.pic4:hover .overlay4{
+.pic3:hover .overlay3{
   opacity: .8;
   transform: scale(3.5);
 }
 
-.overlay4{
+.overlay3{
   position: absolute;
   top: 247px;
   left: 705px;
   opacity: 0;
   transition: 0.5s ease;
 
+}
+
+.pic21:hover .overlay21{
+  opacity: .8;
+  transform: scale(3.5);
+}
+
+.overlay21{
+  position: absolute;
+  top: 332px;
+  left: 705px;
+  opacity: 0;
+  transition: 0.5s ease;
+
+}
+
+.pic30:hover .overlay30{
+  opacity: .8;
+  transform: scale(3.5);
+}
+
+.overlay30{
+  position: absolute;
+  top: 417px;
+  left: 705px;
+  opacity: 0;
+  transition: 0.5s ease;
+
+}
+
+.pic32:hover .overlay32{
+  opacity: .8;
+  transform: scale(3.5);
+}
+
+.overlay32{
+  position: absolute;
+  top: 502px;
+  left: 705px;
+  opacity: 0;
+  transition: 0.5s ease;
+
+}
+
+.pic44:hover .overlay44{
+  opacity: .8;
+  transform: scale(3.5);
+}
+
+.overlay44{
+  position: absolute;
+  top: 587px;
+  left: 705px;
+  opacity: 0;
+  transition: 0.5s ease;
+
+}
+
+.pic57:hover .overlay57{
+  opacity: .8;
+  transform: scale(3.5);
+}
+
+.overlay57{
+  position: absolute;
+  top: 672px;
+  left: 705px;
+  opacity: 0;
+  transition: 0.5s ease;
+
+}
+
+.pic71:hover .overlay71{
+  opacity: .8;
+  transform: scale(3.5);
+}
+
+.overlay71{
+  position: absolute;
+  top: 757px;
+  left: 705px;
+  opacity: 0;
+  transition: 0.5s ease;
+
+}
+
+.pic73:hover .overlay73{
+  opacity: .8;
+  transform: scale(3.5);
+}
+
+.overlay73{
+  position: absolute;
+  top: 842px;
+  left: 705px;
+  opacity: 0;
+  transition: 0.5s ease;
+}
+
+.pic79:hover .overlay79{
+  opacity: .8;
+  transform: scale(3.5);
+}
+
+.overlay79{
+  position: absolute;
+  top: 927px;
+  left: 705px;
+  opacity: 0;
+  transition: 0.5s ease;
+
+}
+
+.pic96:hover .overlay96{
+  opacity: .8;
+  transform: scale(3.5);
+}
+
+.overlay96{
+  position: absolute;
+  top: 1012px;
+  left: 705px;
+  opacity: 0;
+  transition: 0.5s ease;
+
+}
+
+.pic105:hover .overlay105{
+  opacity: .8;
+  transform: scale(3.5);
+}
+
+.overlay105{
+  position: absolute;
+  top: 1097px;
+  left: 705px;
+  opacity: 0;
+  transition: 0.5s ease;
+
+}
+
+.pic109:hover .overlay109{
+  opacity: .8;
+  transform: scale(3.5);
+}
+
+.overlay109{
+  position: absolute;
+  top: 1182px;
+  left: 705px;
+  opacity: 0;
+  transition: 0.5s ease;
+
+}
+
+.pic118:hover .overlay118{
+  opacity: .8;
+  transform: scale(3.5);
+}
+
+.overlay118{
+  position: absolute;
+  top: 1267px;
+  left: 705px;
+  opacity: 0;
+  transition: 0.5s ease;
+}
+
+.pic121:hover .overlay121{
+  opacity: .8;
+  transform: scale(3.5);
+}
+
+.overlay121{
+  position: absolute;
+  top: 1352px;
+  left: 705px;
+  opacity: 0;
+  transition: 0.5s ease;
+}
+
+.pic127:hover .overlay127{
+  opacity: .8;
+  transform: scale(3.5);
+}
+
+.overlay127{
+  position: absolute;
+  top: 1437px;
+  left: 705px;
+  opacity: 0;
+  transition: 0.5s ease;
+}
+
+.pic134:hover .overlay134{
+  opacity: .8;
+  transform: scale(3.5);
+}
+
+.overlay134{
+  position: absolute;
+  top: 1522px;
+  left: 705px;
+  opacity: 0;
+  transition: 0.5s ease;
+}
+
+.pic137:hover .overlay137{
+  opacity: .8;
+  transform: scale(3.5);
+}
+
+.overlay137{
+  position: absolute;
+  top: 1607px;
+  left: 705px;
+  opacity: 0;
+  transition: 0.5s ease;
+}
+
+.pic138:hover .overlay138{
+  opacity: .8;
+  transform: scale(3.5);
+}
+
+.overlay138{
+  position: absolute;
+  top: 1692px;
+  left: 705px;
+  opacity: 0;
+  transition: 0.5s ease;
+}
+
+.pic141:hover .overlay141{
+  opacity: .8;
+  transform: scale(3.5);
+}
+
+.overlay141{
+  position: absolute;
+  top: 1777px;
+  left: 705px;
+  opacity: 0;
+  transition: 0.5s ease;
+}
+
+.pic162:hover .overlay162{
+  opacity: .8;
+  transform: scale(3.5);
+}
+
+.overlay162{
+  position: absolute;
+  top: 1862px;
+  left: 705px;
+  opacity: 0;
+  transition: 0.5s ease;
+}
+
+.pic164:hover .overlay164{
+  opacity: .8;
+  transform: scale(3.5);
+}
+
+.overlay164{
+  position: absolute;
+  top: 1947px;
+  left: 705px;
+  opacity: 0;
+  transition: 0.5s ease;
+}
+
+.pic165:hover .overlay165{
+  opacity: .8;
+  transform: scale(3.5);
+}
+
+.overlay165{
+  position: absolute;
+  top: 2032px;
+  left: 705px;
+  opacity: 0;
+  transition: 0.5s ease;
+}
+
+.pic168:hover .overlay168{
+  opacity: .8;
+  transform: scale(3.5);
+}
+
+.overlay168{
+  position: absolute;
+  top: 2117px;
+  left: 705px;
+  opacity: 0;
+  transition: 0.5s ease;
+}
+
+.pic181:hover .overlay181{
+  opacity: .8;
+  transform: scale(3.6);
+}
+
+.overlay181{
+  position: absolute;
+  top: 2202px;
+  left: 708px;
+  opacity: 0;
+  transition: 0.5s ease;
+}
+
+.pic184:hover .overlay184{
+  opacity: .8;
+  transform: scale(3.5);
+}
+
+.overlay184{
+  position: absolute;
+  top: 2287px;
+  left: 705px;
+  opacity: 0;
+  transition: 0.5s ease;
+}
+
+.pic185:hover .overlay185{
+  opacity: .8;
+  transform: scale(3.5);
+}
+
+.overlay185{
+  position: absolute;
+  top: 2372px;
+  left: 705px;
+  opacity: 0;
+  transition: 0.5s ease;
 }
 
 a#redirect:hover{
