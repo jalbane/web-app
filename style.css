@@ -429,6 +429,43 @@ head{
   opacity: 0;
   transition: 0.5s ease;
 }
+.pic27:hover .overlay27{
+  opacity: .8;
+  transform: scale(3.5);
+}
+
+.overlay27{
+  position: absolute;
+  top: 2457px;
+  left: 705px;
+  opacity: 0;
+  transition: 0.5s ease;
+}
+.pic28:hover .overlay28{
+  opacity: .8;
+  transform: scale(3.5);
+}
+
+.overlay28{
+  position: absolute;
+  top: 2542px;
+  left: 705px;
+  opacity: 0;
+  transition: 0.5s ease;
+}
+
+.pic29:hover .overlay29{
+  opacity: .8;
+  transform: scale(3.5);
+}
+
+.overlay29{
+  position: absolute;
+  top: 2627px;
+  left: 705px;
+  opacity: 0;
+  transition: 0.5s ease;
+}
 
 a#redirect:hover{
   height: 20px;

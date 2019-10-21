@@ -82,32 +82,39 @@
 				  })
 				  .then(function(myJson){
 				  	
-				  		var i;
+				  		var i, j; 
 				  		var table = '';
 
-				  		for (i = 0; i < myJson.members.length; i++){ 
-				  			
+				  		function Raider (name, thumbnail, roleName, specName){
+						  		this.name = name;
+						  		this.thumbnail = thumbnail;
+						  		this.roleName = roleName;
+						  		this.specName = specName;
+				  		}
+
+				  		let raider = [];
+				  		for (i = 0, j = 0; i < myJson.members.length; i++){
+				  			if(myJson.members[i].rank !== 2 && myJson.members[i].rank < 5 ){
 				  			//exclude guild rank 2 because that has become a rank for officer alt characters
-				  			if(myJson.members[i].rank !== 2 && myJson.members[i].rank < 5 )
-				  			{	
-				  				if (myJson.members[i].character.name === "Saeisgay")	//should be demoted or kicked soon	
-									i++;
-								console.log(j);
-								table += '<tr><td><div class = "pic' + j + '"> <img src="https://render-us.worldofwarcraft.com/character/'+ myJson.members[i].character.thumbnail +'"alt= "character tnail" style="width:80px;height:80px;border:0;"><div class="overlay' + j + '"><a id = "redirect" href="https://raider.io/characters/us/lightbringer/' + myJson.members[i].character.name + '" target = "_blank"><img id = "io" src = "https://cdnassets.raider.io/images/fb_app_image.jpg?2018-01-22" style = "width: 22px;height:20px;border:0px;"</a> </div></div></td>';
-				  				table += '<td><strong>' + myJson.members[i].character.name + '</strong></td>';	
-				  				j++;
+				  				raider[j] = new Raider(myJson.members[i].character.name,
+								  						   myJson.members[i].character.thumbnail,
+								  						   myJson.members[i].character.spec.role,
+								  						   myJson.members[i].character.spec.name);
+				  				
+								table += '<tr><td><div class = "pic' + j + '"> <img src="https://render-us.worldofwarcraft.com/character/'+ raider[j].thumbnail +'"alt= "character tnail" style="width:80px;height:80px;border:0;"><div class="overlay' + j + '"><a id = "redirect" href="https://raider.io/characters/us/lightbringer/' + raider[j].name + '" target = "_blank"><img id = "io" src = "https://cdnassets.raider.io/images/fb_app_image.jpg?2018-01-22" style = "width: 22px;height:20px;border:0px;"</a> </div></div></td>';
+				  				table += '<td><strong>' + raider[j].name + '</strong></td>';	
 
 								try {
-									if (myJson.members[i].character.spec.role === 'TANK')
+									if (raider[j].roleName === 'TANK')
 					  					table += '<td>Tank</td>';
 					  						
-					  				else if (myJson.members[i].character.spec.role === 'HEALING')
+					  				else if (raider[j].roleName === 'HEALING')
 					  					table += '<td>Healer</td>';
 					  						
-					  				else if (myJson.members[i].character.spec.role === 'DPS')
+					  				else if (raider[j].roleName === 'DPS')
 					  					table += '<td>Damage</td>';
 					  						
-					  				table += '<td>' + myJson.members[i].character.spec.name + '</td></tr>';	
+					  				table += '<td>' + raider[j].specName + '</td></tr>';	
 								} 
 								catch (e) {
 									if(e instanceof TypeError){
@@ -115,9 +122,11 @@
 										table += '<td>N/A</td>';
 									}
 								}
+								j++;
 				  			}
-				  			document.getElementById("roster-table").innerHTML = table;
 				  		}
+				  		console.log('we have '+ (j+1) + ' raiders currently');
+				  		document.getElementById("roster-table").innerHTML = table;
 				 });
 		}		
 		start();
