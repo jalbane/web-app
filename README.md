@@ -1,4 +1,6 @@
 # web-app
+*Always clear your browser cache to see the most recent changes*
+
 https://nfaguild.herokuapp.com/index.html
 
 
