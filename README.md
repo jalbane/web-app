@@ -4,7 +4,7 @@
 
 https://nfaguild.herokuapp.com/index.html
 
-# __Please check out the roster to see what I've worked on most!__
+# __Please check out the roster (click roster on the nav-bar at the top of the webpage) to see what I've worked on most!__
 
 ## Description:
   Team website for a popular online video game. 
