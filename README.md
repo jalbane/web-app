@@ -2,6 +2,7 @@
 *Always clear your browser cache to see the most recent changes*
 
 https://nfaguild.herokuapp.com/index.html
+
 Please check out the roster to see what I've worked on most!
 
 Team website for a popular online video game. 
