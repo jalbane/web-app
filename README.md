@@ -1,11 +1,12 @@
-# web-app
-*Always clear your browser cache to see the most recent changes*
+
+## *Always clear your browser cache to see the most recent changes to the website provided in the link below* 
+(doesn't apply to first-time visitors )
 
 https://nfaguild.herokuapp.com/index.html
 
-Please check out the roster to see what I've worked on most!
+# __Please check out the roster (click roster on the nav-bar at the top of the webpage) to see what I've worked on most!__
 
-Description:
+## Description:
   Team website for a popular online video game. 
   Displays updated rankings, roster and additional information requested from the Blizzard API. 
   Designed with Bootstrap, HTML5 and CSS. 
