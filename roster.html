@@ -99,7 +99,14 @@
 								  				   myJson.members[i].character.thumbnail,
 								  				   myJson.members[i].character.spec.role,
 								  				   myJson.members[i].character.spec.name);
-				  				
+				  			j++;
+				  		}
+				  	}
+
+				  	raider.sort((a, b) => a.name.localeCompare(b.name));
+				  	console.log(raider, j);
+
+					for (j = 0; j < raider.length; j++){	  	
 							table += '<tr><td><div class = "pic' + j + '"> <img src="https://render-us.worldofwarcraft.com/character/'+ raider[j].thumbnail +'"alt= "character tnail" style="width:80px;height:80px;border:0;"><div class="overlay' + j + '"><a id = "redirect" href="https://raider.io/characters/us/lightbringer/' + raider[j].name + '" target = "_blank"><img id = "io" src = "https://cdnassets.raider.io/images/fb_app_image.jpg?2018-01-22" style = "width: 22px;height:20px;border:0px;"</a> </div></div></td>';
 				  			table += '<td><strong>' + raider[j].name + '</strong></td>';	
 
@@ -121,10 +128,9 @@
 									table += '<td>N/A</td>';
 								}
 							}
-							j++;
-				  		}
-				  	}
-				  	console.log('we have '+ (j+1) + ' raiders currently');
+					}
+				  	
+				  	console.log('we currently have '+ ++j + ' raiders');
 				  	document.getElementById("roster-table").innerHTML = table;
 				 });	
 		}		
