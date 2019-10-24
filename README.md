@@ -1,10 +1,10 @@
 
 ## *Always clear your browser cache to see the most recent changes to the website provided in the link below* 
-(doesn't apply to first-time visitors )
+( Above doesn't apply to first-time visitors )
 
 https://nfaguild.herokuapp.com/index.html
 
-# __Please check out the roster (click roster on the nav-bar at the top of the webpage) to see what I've worked on most!__
+# __Please check out the roster to see what I've worked on most!(click roster on the nav-bar at the top of the webpage) __
 
 ## Description:
   Team website for a popular online video game. 
