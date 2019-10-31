@@ -35,26 +35,27 @@ strong{
 }
 
 .roster-div{
-  
 }
 
 #roster{
   color: black;
- 
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.17);
+  background-color: whitesmoke;
 }
 
 #roster-table, #roster-style{
-  
+  margin: 50px 0px 50px 0px;
   line-height: 20px;
   width: 576px;
   color: black;
   font-size: 13pt;
   font-family: Helvetica;
   font-weight: bold;
-  background-color: #007bff;
+  background-color: whitesmoke;
   border-color: black;
   border-width: thick;
   text-align: center;
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
 }
 tr {
   border-style: solid;
@@ -64,7 +65,6 @@ tr {
 td{
 
 }
-
 
 head{
 
@@ -643,32 +643,92 @@ h1 {
 }
 
 body{
- background-color: whitesmoke;
+ background-color: transparent;
+ margin-bottom: 50px;
+ background-image: url("dark-paths.png");
  
 }
 
 html{
-  background-color: white;
+  background-color: transparent;
   background-size: 1920px 1080px;
   
 }
 
-@media screen and (max-width: 640px) {
-.roster-div{
-  margin: auto;
-  margin-bottom: 0px;
-  padding: 30px 30px;
-  border-radius: 15px;
-  background-color: black;
-  opacity: 1;
+@media screen and (max-width: 411px) {
+  .roster-div{
+    margin: auto;
+  }
 }
+
+@media screen and (max-width: 360px) {
+  .roster-div{
+    margin: auto;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .roster-div{
+    margin: auto;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .roster-div{
+    margin: auto;
+  }
+}
+
+@media screen and (max-width: 414px) {
+  .roster-div{
+    margin: auto;
+  }
+}
+
+@media screen and (max-width: 411px) {
+  .roster-div{
+    margin: auto;
+  }
 }
 
 @media screen and (max-width: 1920px) {
-.roster-div{
-  margin: 20px 652px;
-  border-radius: 15px;
-  background-color: black;
-  box-shadow: 10px 10px;
+  .roster-div{
+    margin: 20px 652px;
+  }
 }
+
+@media screen and (max-width: 768px) {
+  .roster-div{
+    margin: auto;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .roster-div{
+    margin: auto;
+  }
+}
+
+@media screen and (max-width: 812px) {
+  .roster-div{
+    margin: auto;
+  }
+}
+
+@media screen and (max-width: 667px) {
+  .roster-div{
+    margin: auto;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .roster-div{
+    margin: auto;
+  }
+}
+
+@media screen and (max-width: 828px) {
+  .roster-div{
+    margin: auto;
+  }
 }
