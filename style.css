@@ -39,8 +39,8 @@ strong{
 }
 
 #roster{
-  color: white;
-  background-color:transparent;
+  color: black;
+ 
 }
 
 #roster-table, #roster-style{
@@ -72,414 +72,542 @@ head{
 
 .overlay0{
   position: absolute;
-  top: 29px;
-  left: 40px;
-  opacity: 1;
-  transition: 0.5s ease;
-  
+  opacity: 0;
+  top: 24px;
+  left: 36px;
+  z-index: 1;
 }
+
 .pic0:hover .overlay0 {
   opacity: .8;
-  transform: scale(3.0);
+  transition: 0.5s ease;
+  transform: scale(4.0);
 }
 
 .pic0 {
   position:relative;
 }
 
-#io0{
-  position: absolute;
- 
-}
-
-#io1{
-  position: relative;
-  
-}
-
-
-.pic1:hover .overlay1{
-  opacity: .8;
-  transform: scale(3.5);
-}
-
 .overlay1{
   position: absolute;
-  left: 705px;
+  top: 24px;
+  left: 36px;
   opacity: 0;
-  transition: 0.5s ease;
+  z-index: 1;
 }
 
-.pic2:hover .overlay2{
-  opacity: .8;
-  transform: scale(3.5);
+.pic1:hover .overlay1{
+  opacity: .8; 
+  transition: 0.5s ease;
+  transform: scale(4.0);
+}
+
+.pic1 {
+  position:relative;
 }
 
 .overlay2{
   position: absolute;
-  top: 332px;
-  left: 705px;
   opacity: 0;
-  transition: 0.5s ease;
-
+  top: 24px;
+  left: 36px;
+  z-index: 1;
 }
 
-.pic3:hover .overlay3{
+.pic2:hover .overlay2 {
   opacity: .8;
-  transform: scale(3.5);
+  transition: 0.5s ease;
+  transform: scale(4.0);
+}
+
+.pic2 {
+  position:relative;
 }
 
 .overlay3{
   position: absolute;
-  top: 417px;
-  left: 705px;
+  top: 24px;
+  left: 36px;
   opacity: 0;
-  transition: 0.5s ease;
-
+  z-index: 1;
 }
 
-.pic4:hover .overlay4{
-  opacity: .8;
-  transform: scale(3.5);
+.pic3:hover .overlay3{
+  opacity: .8; 
+  transition: 0.5s ease;
+  transform: scale(4.0);
+}
+
+.pic3 {
+  position:relative;
 }
 
 .overlay4{
   position: absolute;
-  top: 502px;
-  left: 705px;
   opacity: 0;
-  transition: 0.5s ease;
-
+  top: 24px;
+  left: 36px;
+  z-index: 1;
 }
 
-.pic5:hover .overlay5{
+.pic4:hover .overlay4 {
   opacity: .8;
-  transform: scale(3.5);
+  transition: 0.5s ease;
+  transform: scale(4.0);
+}
+
+.pic4 {
+  position:relative;
 }
 
 .overlay5{
   position: absolute;
-  top: 587px;
-  left: 705px;
+  top: 24px;
+  left: 36px;
   opacity: 0;
-  transition: 0.5s ease;
-
+  z-index: 1;
 }
 
-.pic6:hover .overlay6{
-  opacity: .8;
-  transform: scale(3.5);
+.pic5:hover .overlay5{
+  opacity: .8; 
+  transition: 0.5s ease;
+  transform: scale(4.0);
+}
+
+.pic5 {
+  position:relative;
 }
 
 .overlay6{
   position: absolute;
-  top: 672px;
-  left: 705px;
+  top: 24px;
+  left: 36px;
   opacity: 0;
-  transition: 0.5s ease;
-
+  z-index: 1;
 }
 
-.pic7:hover .overlay7{
-  opacity: .8;
-  transform: scale(3.5);
+.pic6:hover .overlay6{
+  opacity: .8; 
+  transition: 0.5s ease;
+  transform: scale(4.0);
+}
+
+.pic6 {
+  position:relative;
 }
 
 .overlay7{
   position: absolute;
-  top: 757px;
-  left: 705px;
+  top: 24px;
+  left: 36px;
   opacity: 0;
-  transition: 0.5s ease;
-
+  z-index: 1;
 }
 
-.pic8:hover .overlay8{
-  opacity: .8;
-  transform: scale(3.5);
+.pic7:hover .overlay7{
+  opacity: .8; 
+  transition: 0.5s ease;
+  transform: scale(4.0);
+}
+
+.pic7 {
+  position:relative;
 }
 
 .overlay8{
   position: absolute;
-  top: 842px;
-  left: 705px;
+  top: 24px;
+  left: 36px;
   opacity: 0;
-  transition: 0.5s ease;
+  z-index: 1;
 }
 
-.pic9:hover .overlay9{
-  opacity: .8;
-  transform: scale(3.5);
+.pic8:hover .overlay8{
+  opacity: .8; 
+  transition: 0.5s ease;
+  transform: scale(4.0);
+}
+
+.pic8 {
+  position:relative;
 }
 
 .overlay9{
   position: absolute;
-  top: 927px;
-  left: 705px;
+  top: 24px;
+  left: 36px;
   opacity: 0;
-  transition: 0.5s ease;
-
+  z-index: 1;
 }
 
-.pic10:hover .overlay10{
-  opacity: .8;
-  transform: scale(3.5);
+.pic9:hover .overlay9{
+  opacity: .8; 
+  transition: 0.5s ease;
+  transform: scale(4.0);
+}
+
+.pic9 {
+  position:relative;
 }
 
 .overlay10{
   position: absolute;
-  top: 1012px;
-  left: 705px;
+  top: 24px;
+  left: 36px;
   opacity: 0;
-  transition: 0.5s ease;
-
+  z-index: 1;
 }
 
-.pic11:hover .overlay11{
-  opacity: .8;
-  transform: scale(3.5);
+.pic10:hover .overlay10{
+  opacity: .8; 
+  transition: 0.5s ease;
+  transform: scale(4.0);
+}
+
+.pic10 {
+  position:relative;
 }
 
 .overlay11{
   position: absolute;
-  top: 1097px;
-  left: 705px;
+  top: 24px;
+  left: 36px;
   opacity: 0;
-  transition: 0.5s ease;
-
+  z-index: 1;
 }
 
-.pic12:hover .overlay12{
-  opacity: .8;
-  transform: scale(3.5);
+.pic11:hover .overlay11{
+  opacity: .8; 
+  transition: 0.5s ease;
+  transform: scale(4.0);
+}
+
+.pic11 {
+  position:relative;
 }
 
 .overlay12{
   position: absolute;
-  top: 1182px;
-  left: 705px;
+  top: 24px;
+  left: 36px;
   opacity: 0;
-  transition: 0.5s ease;
-
+  z-index: 1;
 }
 
-.pic13:hover .overlay13{
-  opacity: .8;
-  transform: scale(3.5);
+.pic12:hover .overlay12{
+  opacity: .8; 
+  transition: 0.5s ease;
+  transform: scale(4.0);
+}
+
+.pic12 {
+  position:relative;
 }
 
 .overlay13{
   position: absolute;
-  top: 1267px;
-  left: 705px;
+  top: 24px;
+  left: 36px;
   opacity: 0;
-  transition: 0.5s ease;
+  z-index: 1;
 }
 
-.pic14:hover .overlay14{
-  opacity: .8;
-  transform: scale(3.5);
+.pic13:hover .overlay13{
+  opacity: .8; 
+  transition: 0.5s ease;
+  transform: scale(4.0);
+}
+
+.pic13 {
+  position:relative;
 }
 
 .overlay14{
   position: absolute;
-  top: 1352px;
-  left: 705px;
+  top: 24px;
+  left: 36px;
   opacity: 0;
-  transition: 0.5s ease;
+  z-index: 1;
 }
 
-.pic15:hover .overlay15{
-  opacity: .8;
-  transform: scale(3.5);
+.pic14:hover .overlay14{
+  opacity: .8; 
+  transition: 0.5s ease;
+  transform: scale(4.0);
+}
+
+.pic14 {
+  position:relative;
 }
 
 .overlay15{
   position: absolute;
-  top: 1437px;
-  left: 705px;
+  top: 24px;
+  left: 36px;
   opacity: 0;
-  transition: 0.5s ease;
+  z-index: 1;
 }
 
-.pic16:hover .overlay16{
-  opacity: .8;
-  transform: scale(3.5);
+.pic15:hover .overlay15{
+  opacity: .8; 
+  transition: 0.5s ease;
+  transform: scale(4.0);
+}
+
+.pic15 {
+  position:relative;
 }
 
 .overlay16{
   position: absolute;
-  top: 1522px;
-  left: 705px;
+  top: 24px;
+  left: 36px;
   opacity: 0;
-  transition: 0.5s ease;
+  z-index: 1;
 }
 
-.pic17:hover .overlay17{
-  opacity: .8;
-  transform: scale(3.5);
+.pic16:hover .overlay16{
+  opacity: .8; 
+  transition: 0.5s ease;
+  transform: scale(4.0);
+}
+
+.pic16 {
+  position:relative;
 }
 
 .overlay17{
   position: absolute;
-  top: 1607px;
-  left: 705px;
+  top: 24px;
+  left: 36px;
   opacity: 0;
-  transition: 0.5s ease;
+  z-index: 1;
 }
 
-.pic18:hover .overlay18{
-  opacity: .8;
-  transform: scale(3.5);
+.pic17:hover .overlay17{
+  opacity: .8; 
+  transition: 0.5s ease;
+  transform: scale(4.0);
+}
+
+.pic17 {
+  position:relative;
 }
 
 .overlay18{
   position: absolute;
-  top: 1692px;
-  left: 705px;
+  top: 24px;
+  left: 36px;
   opacity: 0;
-  transition: 0.5s ease;
+  z-index: 1;
 }
 
-.pic19:hover .overlay19{
-  opacity: .8;
-  transform: scale(3.5);
+.pic18:hover .overlay18{
+  opacity: .8; 
+  transition: 0.5s ease;
+  transform: scale(4.0);
+}
+
+.pic18 {
+  position:relative;
 }
 
 .overlay19{
   position: absolute;
-  top: 1777px;
-  left: 705px;
+  top: 24px;
+  left: 36px;
   opacity: 0;
-  transition: 0.5s ease;
+  z-index: 1;
 }
 
-.pic20:hover .overlay20{
-  opacity: .8;
-  transform: scale(3.5);
+.pic19:hover .overlay19{
+  opacity: .8; 
+  transition: 0.5s ease;
+  transform: scale(4.0);
+}
+
+.pic19 {
+  position:relative;
 }
 
 .overlay20{
   position: absolute;
-  top: 1862px;
-  left: 705px;
+  top: 24px;
+  left: 36px;
   opacity: 0;
-  transition: 0.5s ease;
+  z-index: 1;
 }
 
-.pic21:hover .overlay21{
-  opacity: .8;
-  transform: scale(3.5);
+.pic20:hover .overlay20{
+  opacity: .8; 
+  transition: 0.5s ease;
+  transform: scale(4.0);
+}
+
+.pic20 {
+  position:relative;
 }
 
 .overlay21{
   position: absolute;
-  top: 1947px;
-  left: 705px;
+  top: 24px;
+  left: 36px;
   opacity: 0;
-  transition: 0.5s ease;
+  z-index: 1;
 }
 
-.pic22:hover .overlay22{
-  opacity: .8;
-  transform: scale(3.5);
+.pic21:hover .overlay21{
+  opacity: .8; 
+  transition: 0.5s ease;
+  transform: scale(4.0);
+}
+
+.pic21 {
+  position:relative;
 }
 
 .overlay22{
   position: absolute;
-  top: 2032px;
-  left: 705px;
+  top: 24px;
+  left: 36px;
   opacity: 0;
-  transition: 0.5s ease;
+  z-index: 1;
 }
 
-.pic23:hover .overlay23{
-  opacity: .8;
-  transform: scale(3.5);
+.pic22:hover .overlay22{
+  opacity: .8; 
+  transition: 0.5s ease;
+  transform: scale(4.0);
+}
+
+.pic22 {
+  position:relative;
 }
 
 .overlay23{
   position: absolute;
-  top: 2117px;
-  left: 705px;
+  top: 24px;
+  left: 36px;
   opacity: 0;
-  transition: 0.5s ease;
+  z-index: 1;
 }
 
-.pic24:hover .overlay24{
-  opacity: .8;
-  transform: scale(3.6);
+.pic23:hover .overlay23{
+  opacity: .8; 
+  transition: 0.5s ease;
+  transform: scale(4.0);
+}
+
+.pic23 {
+  position:relative;
 }
 
 .overlay24{
   position: absolute;
-  top: 2202px;
-  left: 708px;
+  top: 24px;
+  left: 36px;
   opacity: 0;
-  transition: 0.5s ease;
+  z-index: 1;
 }
 
-.pic25:hover .overlay25{
-  opacity: .8;
-  transform: scale(3.5);
+.pic24:hover .overlay24{
+  opacity: .8; 
+  transition: 0.5s ease;
+  transform: scale(4.0);
+}
+
+.pic24 {
+  position:relative;
 }
 
 .overlay25{
   position: absolute;
-  top: 2287px;
-  left: 705px;
+  top: 24px;
+  left: 36px;
   opacity: 0;
-  transition: 0.5s ease;
+  z-index: 1;
 }
 
-.pic26:hover .overlay26{
-  opacity: .8;
-  transform: scale(3.5);
+.pic25:hover .overlay25{
+  opacity: .8; 
+  transition: 0.5s ease;
+  transform: scale(4.0);
+}
+
+.pic25 {
+  position:relative;
 }
 
 .overlay26{
   position: absolute;
-  top: 2372px;
-  left: 705px;
+  top: 24px;
+  left: 36px;
   opacity: 0;
-  transition: 0.5s ease;
+  z-index: 1;
 }
-.pic27:hover .overlay27{
-  opacity: .8;
-  transform: scale(3.5);
+
+.pic26:hover .overlay26{
+  opacity: .8; 
+  transition: 0.5s ease;
+  transform: scale(4.0);
+}
+
+.pic26 {
+  position:relative;
 }
 
 .overlay27{
   position: absolute;
-  top: 2457px;
-  left: 705px;
+  top: 24px;
+  left: 36px;
   opacity: 0;
-  transition: 0.5s ease;
+  z-index: 1;
 }
-.pic28:hover .overlay28{
-  opacity: .8;
-  transform: scale(3.5);
+
+.pic27:hover .overlay27{
+  opacity: .8; 
+  transition: 0.5s ease;
+  transform: scale(4.0);
+}
+
+.pic27 {
+  position:relative;
 }
 
 .overlay28{
   position: absolute;
-  top: 2542px;
-  left: 705px;
+  top: 24px;
+  left: 36px;
   opacity: 0;
-  transition: 0.5s ease;
+  z-index: 1;
 }
 
-.pic29:hover .overlay29{
-  opacity: .8;
-  transform: scale(3.5);
+.pic28:hover .overlay28{
+  opacity: .8; 
+  transition: 0.5s ease;
+  transform: scale(4.0);
+}
+
+.pic28 {
+  position:relative;
 }
 
 .overlay29{
   position: absolute;
-  top: 2627px;
-  left: 705px;
+  top: 24px;
+  left: 36px;
   opacity: 0;
+  z-index: 1;
+}
+
+.pic29:hover .overlay29{
+  opacity: .8; 
   transition: 0.5s ease;
+  transform: scale(4.0);
+}
+
+.pic29 {
+  position:relative;
 }
 
 a#redirect:hover{
