@@ -8,11 +8,11 @@
 
 .nav-item{
   display: inline-block;  
-
-  font-size: 25px;
-  margin-right: 10px;
+  height: 110px;
+  font-size: 35px;
+  margin-right: auto;
   text-decoration-line: none;
-  padding:0px 20px;
+  padding:25px 90px 25px 90px;
   border-width: 2px;
 }
 
@@ -46,7 +46,7 @@ strong{
 #roster-table, #roster-style{
   
   line-height: 20px;
-  width: 30%;
+  width: 576px;
   color: black;
   font-size: 13pt;
   font-family: Helvetica;
@@ -65,22 +65,38 @@ td{
 
 }
 
+
 head{
 
 }
 
 .overlay0{
   position: absolute;
-  top: 162px;
-  left: 705px;
-  opacity: 0;
+  top: 29px;
+  left: 40px;
+  opacity: 1;
   transition: 0.5s ease;
   
 }
 .pic0:hover .overlay0 {
   opacity: .8;
-  transform: scale(3.5);
+  transform: scale(3.0);
 }
+
+.pic0 {
+  position:relative;
+}
+
+#io0{
+  position: absolute;
+ 
+}
+
+#io1{
+  position: relative;
+  
+}
+
 
 .pic1:hover .overlay1{
   opacity: .8;
@@ -89,7 +105,6 @@ head{
 
 .overlay1{
   position: absolute;
-  top: 247px;
   left: 705px;
   opacity: 0;
   transition: 0.5s ease;
@@ -500,12 +515,32 @@ h1 {
 }
 
 body{
-  background-color: transparent;
+ background-color: whitesmoke;
+ 
 }
 
 html{
-  
-  background-image: url(https://i.ytimg.com/vi/-S4aMLiAX4k/maxresdefault.jpg);  
+  background-color: white;
   background-size: 1920px 1080px;
   
+}
+
+@media screen and (max-width: 640px) {
+.roster-div{
+  margin: auto;
+  margin-bottom: 0px;
+  padding: 30px 30px;
+  border-radius: 15px;
+  background-color: black;
+  opacity: 1;
+}
+}
+
+@media screen and (max-width: 1920px) {
+.roster-div{
+  margin: 20px 652px;
+  border-radius: 15px;
+  background-color: black;
+  box-shadow: 10px 10px;
+}
 }
