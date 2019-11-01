@@ -10,7 +10,7 @@
   display: inline-block;  
   height: 110px;
   font-size: 35px;
-  margin-right: auto;
+  width: 100%;
   text-decoration-line: none;
   padding:25px 90px 25px 90px;
   border-width: 2px;
@@ -731,4 +731,59 @@ html{
   .roster-div{
     margin: auto;
   }
+}
+
+/* DivTable.com */
+.divTable{
+  display: table;
+  width: 100%;
+  color: black;
+  border: solid black 2px;
+  background-color: white;
+  border-top-color: #007bff;
+
+  margin: auto;
+}
+.divTableRow {
+  display: table-row;
+}
+
+.divTableCell, .divTableHead {
+  border: 1px solid #999999;
+  display: table-cell;
+  padding: 3px 10px;
+}
+.divTableHeading {
+  background-color: #007bff;
+  display: table-header-group;
+  font-weight: bold;
+}
+.divTableFoot {
+  background-color: #EEE;
+  display: table-footer-group;
+  font-weight: bold;
+}
+.divTableBody {
+  display: table-row-group;
+}
+
+.divTableRow:nth-of-type(even) {
+background-color:#d8d8d8;
+}
+
+.gname-banner{
+  margin:auto;
+  background-color: #007bff;
+  font-size: 30px;
+  border: solid black 2px;
+  border-bottom-color:#007bff;
+  color: black;
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.17);
+}
+
+.index-body{
+  padding: 5%;
+  width: 60%;
+  margin: auto;
+  background-color: transparent;
 }
