@@ -27,7 +27,7 @@
 	      </li>
 	      <li class="nav-item dropdown">
 	        <a class="nav-link dropdown-toggle" href="" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-	          Additional Links
+	          	Additional Links
 	        </a>
 	        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
 	          <a id = "tag" class="dropdown-item" href="https://raider.io/guilds/us/lightbringer/NFA" target ="_blank">Raider.IO</a>
@@ -39,71 +39,80 @@
 	  </div>
 	</nav>
 </body>
-			<h1> No Fun Allowed - Lightbringer (US) </h1>
-				<table >
-				  <thead>
-				    <tr>
-				      <th scope="col">Raid</th>
-				      <th scope="col">Progress</th>
-				      <th scope="col">Realm</th>
-				      <th scope="col">World</th>
-				    </tr>
-				  </thead>
-				  <tbody>
-				    <tr>
-				      <th  scope="row">Uldir</th>
-				      <td id = "progress"></td>
-				      <td id = "uldir-realm"> </td>
-				      <td id = "uldir-world"></td>
-				    </tr>
-				    <tr>
-				      <th scope="row">Battle of Dazar'alor</th>
-				      <td id="progress2"></td>
-				      <td id = "battle-realm"></td>
-				      <td id = "battle-world"></td>
-				    </tr>
-				 	<tr>
-				      <th scope="row">Crucible of Storms</th>
-				      <td id="progress3"></td>
-				      <td id = "cruc-realm"></td>
-				      <td id = "cruc-world"></td>
-				  	</tr>
-				  	<tr>
-				  		<th scope= "row"> The Eternal Palace</th>
-				  		<td id = "progress4"></td>
-				  		<td id = "ep-realm"></td>
-				  		<td id = "ep-world"></td>
-				  	</tr>
-				  </tbody>
-				</table>
+		<div class = "index-body">
+			<h1 class= "gname-banner"> No Fun Allowed - Lightbringer (US) </h1>
+				<div class="divTable">
+					<div class="divTableHeading">
+						<div class="divTableRow">
+							<div class="divTableHead">Raid</div>
+							<div class="divTableHead">Progress</div>
+							<div class="divTableHead">Realm ranking</div>
+							<div class="divTableHead">World ranking</div>
+						</div>
+					</div>
+
+					<div class="divTableBody">
+						<div class="divTableRow">
+							<div class="divTableHead">Uldir</div>
+							<div class="divTableCell"></div>
+							<div class="divTableCell"></div>
+							<div class="divTableCell"></div>
+						</div>
+
+						<div class="divTableRow">
+							<div class="divTableHead">Battle of Dazar'alor</div>
+							<div class="divTableCell"></div>
+							<div class="divTableCell"></div>
+							<div class="divTableCell"></div>
+						</div>
+
+						<div class="divTableRow">
+							<div class="divTableHead">Crucible of Storms</div>
+							<div class="divTableCell"></div>
+							<div class="divTableCell"></div>
+							<div class="divTableCell"></div>
+						</div>
+						<div class="divTableRow">
+							<div class="divTableHead">The Eternal Palace</div>
+							<div class="divTableCell"></div>
+							<div class="divTableCell"></div>
+							<div class="divTableCell"></div>
+						</div>
+					</div>
+				</div>
+			</div>
 			
 		<script>
-			
+				
+				async function get(){
+				let elements = [] 
 				fetch('https://raider.io/api/v1/guilds/profile?region=US&realm=Lightbringer&name=NFA&fields=raid_progression')
 				  .then(function(response) {
 				    return response.json();
-				  }).then(function(ViewGuildProfileResponse){
+				  }).then(function(body){
 				  	
-				  	document.getElementById("progress").innerHTML = ViewGuildProfileResponse.raid_progression.uldir.summary;
-				  	document.getElementById("progress2").innerHTML= ViewGuildProfileResponse.raid_progression["battle-of-dazaralor"].summary;
-					document.getElementById("progress3").innerHTML= ViewGuildProfileResponse.raid_progression["crucible-of-storms"].summary;
-					document.getElementById("progress4").innerHTML= ViewGuildProfileResponse.raid_progression["the-eternal-palace"].summary;
-				  	});
+				  	elements = document.getElementsByClassName("divTableCell");
+				  	elements[0].insertAdjacentText('afterbegin', body.raid_progression.uldir.summary); 
+				  	elements[3].insertAdjacentText('afterbegin', body.raid_progression["battle-of-dazaralor"].summary);
+					elements[6].insertAdjacentText('afterbegin', body.raid_progression["crucible-of-storms"].summary);
+					elements[9].insertAdjacentText('afterbegin', body.raid_progression["the-eternal-palace"].summary);
+				  });
 				    
 				    fetch('https://raider.io/api/v1/guilds/profile?region=US&realm=Lightbringer&name=NFA&fields=raid_rankings')
 				  .then(function(response) {
 				    return response.json();
-				  }).then(function(ViewGuildProfileResponse){
-				  	
-				  	document.getElementById("uldir-realm").innerHTML = ViewGuildProfileResponse.raid_rankings.uldir.mythic.realm;
-				  	document.getElementById("uldir-world").innerHTML = ViewGuildProfileResponse.raid_rankings.uldir.mythic.world;
-				  	document.getElementById("battle-realm").innerHTML= ViewGuildProfileResponse.raid_rankings["battle-of-dazaralor"].mythic.realm;
-				  	document.getElementById("battle-world").innerHTML= ViewGuildProfileResponse.raid_rankings["battle-of-dazaralor"].mythic.world;
-				  	document.getElementById("cruc-realm").innerHTML= ViewGuildProfileResponse.raid_rankings["crucible-of-storms"].heroic.realm;
-				  	document.getElementById("cruc-world").innerHTML= ViewGuildProfileResponse.raid_rankings["crucible-of-storms"].heroic.world;
-				  	document.getElementById("ep-realm").innerHTML= ViewGuildProfileResponse.raid_rankings["the-eternal-palace"].mythic.realm;
-				  	document.getElementById("ep-world").innerHTML= ViewGuildProfileResponse.raid_rankings["the-eternal-palace"].mythic.world;
+				  }).then(function(body){
+				  	elements[1].insertAdjacentText('afterbegin', body.raid_rankings.uldir.mythic.realm);
+				  	elements[2].insertAdjacentText('afterbegin', body.raid_rankings.uldir.mythic.world);
+				  	elements[4].insertAdjacentText('afterbegin', body.raid_rankings["battle-of-dazaralor"].mythic.realm);
+				  	elements[5].insertAdjacentText('afterbegin', body.raid_rankings["battle-of-dazaralor"].mythic.world);
+				  	elements[7].insertAdjacentText('afterbegin', body.raid_rankings["crucible-of-storms"].heroic.realm);
+				  	elements[8].insertAdjacentText('afterbegin', body.raid_rankings["crucible-of-storms"].heroic.world);
+				  	elements[10].insertAdjacentText('afterbegin', body.raid_rankings["the-eternal-palace"].mythic.realm);
+				  	elements[11].insertAdjacentText('afterbegin', body.raid_rankings["the-eternal-palace"].mythic.world);
 				  	});
+				}
+				get();
 			
 		</script>
 		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
