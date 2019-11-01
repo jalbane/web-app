@@ -1,6 +1,6 @@
 
-## *Always clear your browser cache to see the most recent changes to the website provided in the link below* 
-( Above doesn't apply to first-time visitors )
+## *Clear your browser cache to see my recent updates to the website* 
+(Above doesn't apply to first-time visitors)
 
 https://nfaguild.herokuapp.com/index.html
 
