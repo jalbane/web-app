@@ -8,12 +8,16 @@
 
 .nav-item{
   display: inline-block;  
-  height: 110px;
-  font-size: 35px;
-  width: 100%;
+  height: 80px;
+  font-size: 25px;
+  width: 10%;
   text-decoration-line: none;
-  padding:25px 90px 25px 90px;
+  padding:10px 50px 0px 50px;
   border-width: 2px;
+}
+
+.navbar-nav{
+  width: 10%;
 }
 
 table{
@@ -35,6 +39,7 @@ strong{
 }
 
 .roster-div{
+  width: 60%;
 }
 
 #roster{
@@ -44,9 +49,9 @@ strong{
 }
 
 #roster-table, #roster-style{
-  margin: 50px 0px 50px 0px;
+  margin: auto;
   line-height: 20px;
-  width: 576px;
+  width: 60%;
   color: black;
   font-size: 13pt;
   font-family: Helvetica;
@@ -634,8 +639,7 @@ h1 {
 }
 
 #roster-body{
-  min-width: 375px;
-  min-height: 812px;
+  max-width: 100%;
   text-align: center;
   cursor: default;
   /*background-image: url(https://i.ytimg.com/vi/-S4aMLiAX4k/maxresdefault.jpg);*/
@@ -655,7 +659,7 @@ html{
   
 }
 
-@media screen and (max-width: 411px) {
+/*@media screen and (max-width: 411px) {
   .roster-div{
     margin: auto;
   }
@@ -693,7 +697,9 @@ html{
 
 @media screen and (max-width: 1920px) {
   .roster-div{
-    margin: 20px 652px;
+    margin: auto;
+    width: 70%;
+    position: relative;
   }
 }
 
@@ -711,7 +717,7 @@ html{
 
 @media screen and (max-width: 812px) {
   .roster-div{
-    margin: auto;
+    width: 50%;
   }
 }
 
@@ -731,28 +737,38 @@ html{
   .roster-div{
     margin: auto;
   }
-}
+}*/
 
 /* DivTable.com */
 .divTable{
-  display: table;
   width: 100%;
+  display: table;
   color: black;
   border: solid black 2px;
   background-color: white;
-  border-top-color: #007bff;
-
+  border-top-color: rgba(0,0,0,1);
+  border-bottom-style: none;
   margin: auto;
 }
 .divTableRow {
   display: table-row;
+  text-align:center;
 }
 
-.divTableCell, .divTableHead {
-  border: 1px solid #999999;
+.divTableCell{
   display: table-cell;
-  padding: 3px 10px;
+  border-bottom-style: inset;
+  border-bottom-width: 2px;
+  border-bottom-color: black;
+} 
+
+.divTableHead {
+  display: table-cell;
+  border-bottom-style: inset;
+  border-bottom-width: 2px;
+  border-bottom-color: black;
 }
+
 .divTableHeading {
   background-color: #007bff;
   display: table-header-group;
@@ -772,9 +788,10 @@ background-color:#d8d8d8;
 }
 
 .gname-banner{
-  margin:auto;
+  width: 100%;
+  text-align: center;
   background-color: #007bff;
-  font-size: 30px;
+  font-size: 20px;
   border: solid black 2px;
   border-bottom-color:#007bff;
   color: black;
@@ -782,8 +799,36 @@ background-color:#d8d8d8;
 }
 
 .index-body{
-  padding: 5%;
-  width: 60%;
   margin: auto;
+  padding: 50px 0px 0px;
+  width: 33%;
   background-color: transparent;
+}
+
+@media only screen and (max-width: 1440px) {
+  .index-body{
+  margin: auto;
+  padding: 50px 0px 0px;
+  width: 65%;
+  background-color: transparent;
+  }
+}
+
+@media only screen and (max-width: 1920px) {
+  .index-body{
+  margin: auto;
+  padding: 50px 0px 0px;
+  width: 40%;
+  background-color: transparent;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  /* For mobile phones: */
+  .index-body{
+  margin: auto;
+  padding: 50px 0px 0px;
+  width: 100%;
+  background-color: transparent;
+  }
 }

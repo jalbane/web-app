@@ -1,20 +1,19 @@
 <!DOCTYPE html>
 
-<html>
-	<head>
+<html><head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>NFA - Lightbringer</title>
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-		<link rel="stylesheet" type ="text/css" href="style.css">
-		<meta name="viewport" content="width=device-width, initial-scale=1" /> 
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1"> 
 	</head>
-	
 	<body>
-	 <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+	 <nav class="navbar navbar-expand-sm navbar-dark bg-primary">
 	  <a class="navbar-brand" href="#"></a>
-	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+	  <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
 	    <span class="navbar-toggler-icon"></span>
 	  </button>
-	  <div class="collapse navbar-collapse" id="navbarNavDropdown">
+	  <div class="navbar-collapse collapse" id="navbarNavDropdown" style="">
 	    <ul class="navbar-nav">
 	      <li class="nav-item active">
 	        <a class="nav-link" href="index.html">Home<span class="sr-only"></span></a> 
@@ -30,58 +29,58 @@
 	          	Additional Links
 	        </a>
 	        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-	          <a id = "tag" class="dropdown-item" href="https://raider.io/guilds/us/lightbringer/NFA" target ="_blank">Raider.IO</a>
-	          <a id = "tag" class="dropdown-item" href="https://www.wowprogress.com/guild/us/lightbringer/NFA" target ="_blank">Wow progress</a>
-	          <a id = "tag" class="dropdown-item" href="https://www.warcraftlogs.com/guild/reports-list/357706/" target ="_blank">Warcraft logs</a>
+	          <a id="tag" class="dropdown-item" href="https://raider.io/guilds/us/lightbringer/NFA" target="_blank">Raider.IO</a>
+	          <a id="tag" class="dropdown-item" href="https://www.wowprogress.com/guild/us/lightbringer/NFA" target="_blank">Wow progress</a>
+	          <a id="tag" class="dropdown-item" href="https://www.warcraftlogs.com/guild/reports-list/357706/" target="_blank">Warcraft logs</a>
 	        </div>
 	      </li>
 	    </ul>
 	  </div>
 	</nav>
-</body>
-		<div class = "index-body">
-			<h1 class= "gname-banner"> No Fun Allowed - Lightbringer (US) </h1>
-				<div class="divTable">
-					<div class="divTableHeading">
-						<div class="divTableRow">
-							<div class="divTableHead">Raid</div>
-							<div class="divTableHead">Progress</div>
-							<div class="divTableHead">Realm ranking</div>
-							<div class="divTableHead">World ranking</div>
-						</div>
-					</div>
 
-					<div class="divTableBody">
-						<div class="divTableRow">
-							<div class="divTableHead">Uldir</div>
-							<div class="divTableCell"></div>
-							<div class="divTableCell"></div>
-							<div class="divTableCell"></div>
-						</div>
-
-						<div class="divTableRow">
-							<div class="divTableHead">Battle of Dazar'alor</div>
-							<div class="divTableCell"></div>
-							<div class="divTableCell"></div>
-							<div class="divTableCell"></div>
-						</div>
-
-						<div class="divTableRow">
-							<div class="divTableHead">Crucible of Storms</div>
-							<div class="divTableCell"></div>
-							<div class="divTableCell"></div>
-							<div class="divTableCell"></div>
-						</div>
-						<div class="divTableRow">
-							<div class="divTableHead">The Eternal Palace</div>
-							<div class="divTableCell"></div>
-							<div class="divTableCell"></div>
-							<div class="divTableCell"></div>
-						</div>
+	<div class="index-body">
+		<div class="gname-banner">No Fun Allowed - Lightbringer (US)</div>
+			
+			<div class="divTable">
+				<div class="divTableHeading">
+					<div class="divTableRow">
+						<div class="divTableHead">Raid</div>
+						<div class="divTableHead">Progress</div>
+						<div class="divTableHead">Realm ranking</div>
+						<div class="divTableHead">World ranking</div>
 					</div>
 				</div>
+
+			<div class="divTableBody">
+				<div class="divTableRow">
+					<div class="divTableCell">Uldir</div>
+					<div class="divTableCell"></div>
+					<div class="divTableCell"></div>
+					<div class="divTableCell"></div>
+				</div>
+
+				<div class="divTableRow">
+					<div class="divTableCell">Battle of Dazar'alor</div>
+					<div class="divTableCell"></div>
+					<div class="divTableCell"></div>
+					<div class="divTableCell"></div>
+				</div>
+
+				<div class="divTableRow">
+					<div class="divTableCell">Crucible of Storms</div>
+					<div class="divTableCell"></div>
+					<div class="divTableCell"></div>
+					<div class="divTableCell"></div>
+				</div>
+				<div class="divTableRow">
+					<div class="divTableCell">The Eternal Palace</div>
+					<div class="divTableCell"></div>
+					<div class="divTableCell"></div>
+					<div class="divTableCell"></div>
+				</div>
 			</div>
-			
+		</div>
+	</div>
 		<script>
 				
 				async function get(){
@@ -92,32 +91,30 @@
 				  }).then(function(body){
 				  	
 				  	elements = document.getElementsByClassName("divTableCell");
-				  	elements[0].insertAdjacentText('afterbegin', body.raid_progression.uldir.summary); 
-				  	elements[3].insertAdjacentText('afterbegin', body.raid_progression["battle-of-dazaralor"].summary);
-					elements[6].insertAdjacentText('afterbegin', body.raid_progression["crucible-of-storms"].summary);
-					elements[9].insertAdjacentText('afterbegin', body.raid_progression["the-eternal-palace"].summary);
+				  	elements[1].insertAdjacentText('afterbegin', body.raid_progression.uldir.summary);
+				  	elements[5].insertAdjacentText('afterbegin', body.raid_progression["battle-of-dazaralor"].summary);
+					elements[9].insertAdjacentText('afterbegin', body.raid_progression["crucible-of-storms"].summary);
+					elements[13].insertAdjacentText('afterbegin', body.raid_progression["the-eternal-palace"].summary);
 				  });
 				    
 				    fetch('https://raider.io/api/v1/guilds/profile?region=US&realm=Lightbringer&name=NFA&fields=raid_rankings')
 				  .then(function(response) {
 				    return response.json();
 				  }).then(function(body){
-				  	elements[1].insertAdjacentText('afterbegin', body.raid_rankings.uldir.mythic.realm);
-				  	elements[2].insertAdjacentText('afterbegin', body.raid_rankings.uldir.mythic.world);
-				  	elements[4].insertAdjacentText('afterbegin', body.raid_rankings["battle-of-dazaralor"].mythic.realm);
-				  	elements[5].insertAdjacentText('afterbegin', body.raid_rankings["battle-of-dazaralor"].mythic.world);
-				  	elements[7].insertAdjacentText('afterbegin', body.raid_rankings["crucible-of-storms"].heroic.realm);
-				  	elements[8].insertAdjacentText('afterbegin', body.raid_rankings["crucible-of-storms"].heroic.world);
-				  	elements[10].insertAdjacentText('afterbegin', body.raid_rankings["the-eternal-palace"].mythic.realm);
-				  	elements[11].insertAdjacentText('afterbegin', body.raid_rankings["the-eternal-palace"].mythic.world);
+				  	elements[2].insertAdjacentText('afterbegin', body.raid_rankings.uldir.mythic.realm);
+				  	elements[3].insertAdjacentText('afterbegin', body.raid_rankings.uldir.mythic.world);
+				  	elements[6].insertAdjacentText('afterbegin', body.raid_rankings["battle-of-dazaralor"].mythic.realm);
+				  	elements[7].insertAdjacentText('afterbegin', body.raid_rankings["battle-of-dazaralor"].mythic.world);
+				  	elements[10].insertAdjacentText('afterbegin', body.raid_rankings["crucible-of-storms"].heroic.realm);
+				  	elements[11].insertAdjacentText('afterbegin', body.raid_rankings["crucible-of-storms"].heroic.world);
+				  	elements[14].insertAdjacentText('afterbegin', body.raid_rankings["the-eternal-palace"].mythic.realm);
+				  	elements[15].insertAdjacentText('afterbegin', body.raid_rankings["the-eternal-palace"].mythic.world);
 				  	});
 				}
-				get();
-			
+				get();	
 		</script>
 		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-	
-	
-</html>
+
+</body></html>
