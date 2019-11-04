@@ -39,13 +39,14 @@ strong{
 }
 
 .roster-div{
+  margin: auto;
   width: 60%;
 }
 
 #roster{
   color: black;
   -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.17);
-  background-color: whitesmoke;
+  background-color: #007bff;
 }
 
 #roster-table, #roster-style{
@@ -78,8 +79,8 @@ head{
 .overlay0{
   position: absolute;
   opacity: 0;
-  top: 24px;
-  left: 36px;
+  top: 20px;
+  left: 30px;
   z-index: 1;
 }
 
@@ -89,15 +90,17 @@ head{
   transform: scale(4.0);
 }
 
-.pic0 {
-  position:relative;
+.pic0{
+  width: 80px;
+  height: 80px;
+  position: relative;
 }
 
 .overlay1{
-  position: absolute;
-  top: 24px;
-  left: 36px;
+    position: absolute;
   opacity: 0;
+  top: 20px;
+  left: 30px;
   z-index: 1;
 }
 
@@ -108,14 +111,16 @@ head{
 }
 
 .pic1 {
+  width: 80px;
+  height: 80px;
   position:relative;
 }
 
 .overlay2{
   position: absolute;
   opacity: 0;
-  top: 24px;
-  left: 36px;
+  top: 20px;
+  left: 30px;
   z-index: 1;
 }
 
@@ -127,13 +132,15 @@ head{
 
 .pic2 {
   position:relative;
+  height: 80px;
+  width: 80px;
 }
 
 .overlay3{
   position: absolute;
-  top: 24px;
-  left: 36px;
   opacity: 0;
+  top: 20px;
+  left: 30px;
   z-index: 1;
 }
 
@@ -145,13 +152,15 @@ head{
 
 .pic3 {
   position:relative;
+  height: 80px;
+  width: 80px;
 }
 
 .overlay4{
   position: absolute;
   opacity: 0;
-  top: 24px;
-  left: 36px;
+  top: 20px;
+  left: 30px;
   z-index: 1;
 }
 
@@ -163,13 +172,15 @@ head{
 
 .pic4 {
   position:relative;
+  height: 80px;
+  width: 80px;
 }
 
 .overlay5{
   position: absolute;
-  top: 24px;
-  left: 36px;
   opacity: 0;
+  top: 20px;
+  left: 30px;
   z-index: 1;
 }
 
@@ -181,13 +192,15 @@ head{
 
 .pic5 {
   position:relative;
+  height: 80px;
+  width: 80px;
 }
 
 .overlay6{
   position: absolute;
-  top: 24px;
-  left: 36px;
   opacity: 0;
+  top: 20px;
+  left: 30px;
   z-index: 1;
 }
 
@@ -199,13 +212,15 @@ head{
 
 .pic6 {
   position:relative;
+  height: 80px;
+  width: 80px;
 }
 
 .overlay7{
   position: absolute;
-  top: 24px;
-  left: 36px;
   opacity: 0;
+  top: 20px;
+  left: 30px;
   z-index: 1;
 }
 
@@ -217,13 +232,15 @@ head{
 
 .pic7 {
   position:relative;
+  height: 80px;
+  width: 80px;
 }
 
 .overlay8{
   position: absolute;
-  top: 24px;
-  left: 36px;
   opacity: 0;
+  top: 20px;
+  left: 30px;
   z-index: 1;
 }
 
@@ -235,13 +252,15 @@ head{
 
 .pic8 {
   position:relative;
+  height: 80px;
+  width: 80px;
 }
 
 .overlay9{
   position: absolute;
-  top: 24px;
-  left: 36px;
   opacity: 0;
+  top: 20px;
+  left: 30px;
   z-index: 1;
 }
 
@@ -253,13 +272,15 @@ head{
 
 .pic9 {
   position:relative;
+  height: 80px;
+  width: 80px;
 }
 
 .overlay10{
   position: absolute;
-  top: 24px;
-  left: 36px;
   opacity: 0;
+  top: 20px;
+  left: 30px;
   z-index: 1;
 }
 
@@ -271,13 +292,15 @@ head{
 
 .pic10 {
   position:relative;
+  height: 80px;
+  width: 80px;
 }
 
 .overlay11{
   position: absolute;
-  top: 24px;
-  left: 36px;
   opacity: 0;
+  top: 20px;
+  left: 30px;
   z-index: 1;
 }
 
@@ -289,13 +312,15 @@ head{
 
 .pic11 {
   position:relative;
+  height: 80px;
+  width: 80px;
 }
 
 .overlay12{
   position: absolute;
-  top: 24px;
-  left: 36px;
   opacity: 0;
+  top: 20px;
+  left: 30px;
   z-index: 1;
 }
 
@@ -307,13 +332,15 @@ head{
 
 .pic12 {
   position:relative;
+  height: 80px;
+  width: 80px;
 }
 
 .overlay13{
   position: absolute;
-  top: 24px;
-  left: 36px;
   opacity: 0;
+  top: 20px;
+  left: 30px;
   z-index: 1;
 }
 
@@ -325,13 +352,15 @@ head{
 
 .pic13 {
   position:relative;
+  height: 80px;
+  width: 80px;
 }
 
 .overlay14{
   position: absolute;
-  top: 24px;
-  left: 36px;
   opacity: 0;
+  top: 20px;
+  left: 30px;
   z-index: 1;
 }
 
@@ -343,13 +372,15 @@ head{
 
 .pic14 {
   position:relative;
+  height: 80px;
+  width: 80px;
 }
 
 .overlay15{
   position: absolute;
-  top: 24px;
-  left: 36px;
   opacity: 0;
+  top: 20px;
+  left: 30px;
   z-index: 1;
 }
 
@@ -361,13 +392,15 @@ head{
 
 .pic15 {
   position:relative;
+  height: 80px;
+  width: 80px;
 }
 
 .overlay16{
   position: absolute;
-  top: 24px;
-  left: 36px;
   opacity: 0;
+  top: 20px;
+  left: 30px;
   z-index: 1;
 }
 
@@ -379,13 +412,15 @@ head{
 
 .pic16 {
   position:relative;
+  height: 80px;
+  width: 80px;
 }
 
 .overlay17{
   position: absolute;
-  top: 24px;
-  left: 36px;
   opacity: 0;
+  top: 20px;
+  left: 30px;
   z-index: 1;
 }
 
@@ -397,13 +432,15 @@ head{
 
 .pic17 {
   position:relative;
+  height: 80px;
+  width: 80px;
 }
 
 .overlay18{
   position: absolute;
-  top: 24px;
-  left: 36px;
   opacity: 0;
+  top: 20px;
+  left: 30px;
   z-index: 1;
 }
 
@@ -415,13 +452,15 @@ head{
 
 .pic18 {
   position:relative;
+  height: 80px;
+  width: 80px;
 }
 
 .overlay19{
   position: absolute;
-  top: 24px;
-  left: 36px;
   opacity: 0;
+  top: 20px;
+  left: 30px;
   z-index: 1;
 }
 
@@ -433,13 +472,15 @@ head{
 
 .pic19 {
   position:relative;
+  height: 80px;
+  width: 80px;
 }
 
 .overlay20{
   position: absolute;
-  top: 24px;
-  left: 36px;
   opacity: 0;
+  top: 20px;
+  left: 30px;
   z-index: 1;
 }
 
@@ -451,13 +492,15 @@ head{
 
 .pic20 {
   position:relative;
+  height: 80px;
+  width: 80px;
 }
 
 .overlay21{
   position: absolute;
-  top: 24px;
-  left: 36px;
   opacity: 0;
+  top: 20px;
+  left: 30px;
   z-index: 1;
 }
 
@@ -469,13 +512,15 @@ head{
 
 .pic21 {
   position:relative;
+  height: 80px;
+  width: 80px;
 }
 
 .overlay22{
   position: absolute;
-  top: 24px;
-  left: 36px;
   opacity: 0;
+  top: 20px;
+  left: 30px;
   z-index: 1;
 }
 
@@ -487,13 +532,15 @@ head{
 
 .pic22 {
   position:relative;
+  height: 80px;
+  width: 80px;
 }
 
 .overlay23{
   position: absolute;
-  top: 24px;
-  left: 36px;
   opacity: 0;
+  top: 20px;
+  left: 30px;
   z-index: 1;
 }
 
@@ -505,13 +552,15 @@ head{
 
 .pic23 {
   position:relative;
+  height: 80px;
+  width: 80px;
 }
 
 .overlay24{
   position: absolute;
-  top: 24px;
-  left: 36px;
   opacity: 0;
+  top: 20px;
+  left: 30px;
   z-index: 1;
 }
 
@@ -523,13 +572,15 @@ head{
 
 .pic24 {
   position:relative;
+  height: 80px;
+  width: 80px;
 }
 
 .overlay25{
   position: absolute;
-  top: 24px;
-  left: 36px;
   opacity: 0;
+  top: 20px;
+  left: 30px;
   z-index: 1;
 }
 
@@ -541,13 +592,15 @@ head{
 
 .pic25 {
   position:relative;
+  height: 80px;
+  width: 80px;
 }
 
 .overlay26{
   position: absolute;
-  top: 24px;
-  left: 36px;
   opacity: 0;
+  top: 20px;
+  left: 30px;
   z-index: 1;
 }
 
@@ -559,13 +612,15 @@ head{
 
 .pic26 {
   position:relative;
+  height: 80px;
+  width: 80px;
 }
 
 .overlay27{
   position: absolute;
-  top: 24px;
-  left: 36px;
   opacity: 0;
+  top: 20px;
+  left: 30px;
   z-index: 1;
 }
 
@@ -577,13 +632,15 @@ head{
 
 .pic27 {
   position:relative;
+  height: 80px;
+  width: 80px;
 }
 
 .overlay28{
   position: absolute;
-  top: 24px;
-  left: 36px;
   opacity: 0;
+  top: 20px;
+  left: 30px;
   z-index: 1;
 }
 
@@ -595,13 +652,15 @@ head{
 
 .pic28 {
   position:relative;
+  height: 80px;
+  width: 80px;
 }
 
 .overlay29{
   position: absolute;
-  top: 24px;
-  left: 36px;
   opacity: 0;
+  top: 20px;
+  left: 30px;
   z-index: 1;
 }
 
@@ -613,12 +672,27 @@ head{
 
 .pic29 {
   position:relative;
+  height: 80px;
+  width: 80px;
 }
 
-a#redirect:hover{
-  height: 20px;
-  width: 20px;
+/*.overlay30{
+  position: absolute;
+  opacity: 0;
+  top: 20px;
+  left: 30px;
+  z-index: 1;
 }
+
+.pic30:hover .overlay30{
+  opacity: .8; 
+  transition: 0.5s ease;
+  transform: scale(4.0);
+}
+
+.pic30 {
+  position:relative;
+}*/
 
 .text {
   color: white;
@@ -632,6 +706,7 @@ img {
   height: 250px;
   width: 250px;
 }
+
 h1 {
   color: white;
   font-family: sans-serif;
@@ -642,8 +717,6 @@ h1 {
   max-width: 100%;
   text-align: center;
   cursor: default;
-  /*background-image: url(https://i.ytimg.com/vi/-S4aMLiAX4k/maxresdefault.jpg);*/
-  
 }
 
 body{
@@ -655,92 +728,9 @@ body{
 
 html{
   background-color: transparent;
-  background-size: 1920px 1080px;
-  
 }
 
-/*@media screen and (max-width: 411px) {
-  .roster-div{
-    margin: auto;
-  }
-}
-
-@media screen and (max-width: 360px) {
-  .roster-div{
-    margin: auto;
-  }
-}
-
-@media screen and (max-width: 320px) {
-  .roster-div{
-    margin: auto;
-  }
-}
-
-@media screen and (max-width: 375px) {
-  .roster-div{
-    margin: auto;
-  }
-}
-
-@media screen and (max-width: 414px) {
-  .roster-div{
-    margin: auto;
-  }
-}
-
-@media screen and (max-width: 411px) {
-  .roster-div{
-    margin: auto;
-  }
-}
-
-@media screen and (max-width: 1920px) {
-  .roster-div{
-    margin: auto;
-    width: 70%;
-    position: relative;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .roster-div{
-    margin: auto;
-  }
-}
-
-@media screen and (max-width: 1024px) {
-  .roster-div{
-    margin: auto;
-  }
-}
-
-@media screen and (max-width: 812px) {
-  .roster-div{
-    width: 50%;
-  }
-}
-
-@media screen and (max-width: 667px) {
-  .roster-div{
-    margin: auto;
-  }
-}
-
-@media screen and (max-width: 640px) {
-  .roster-div{
-    margin: auto;
-  }
-}
-
-@media screen and (max-width: 828px) {
-  .roster-div{
-    margin: auto;
-  }
-}*/
-
-/* DivTable.com */
-.divTable{
+.divTable {
   width: 100%;
   display: table;
   color: black;
@@ -750,7 +740,7 @@ html{
   border-bottom-style: none;
   margin: auto;
 }
-.divTableRow {
+.divTableRow{
   display: table-row;
   text-align:center;
 }
@@ -779,11 +769,12 @@ html{
   display: table-footer-group;
   font-weight: bold;
 }
-.divTableBody {
+.divTableBody{
   display: table-row-group;
+  color: black;
 }
 
-.divTableRow:nth-of-type(even) {
+.divTableRow:nth-of-type(even), .table-row:nth-of-type(even) {
 background-color:#d8d8d8;
 }
 
@@ -803,6 +794,14 @@ background-color:#d8d8d8;
   padding: 50px 0px 0px;
   width: 33%;
   background-color: transparent;
+}
+
+.table-container{
+  color: black;
+  margin: auto;
+  padding: 50px 0px 0px;
+  width: 33%;
+  background-color: white;
 }
 
 @media only screen and (max-width: 1440px) {
@@ -831,4 +830,76 @@ background-color:#d8d8d8;
   width: 100%;
   background-color: transparent;
   }
+}
+
+.table-row{
+  display: table-row;
+  margin: auto;
+  border: solid black 20px;
+  border-top-style: none;
+  border-bottom-style: dashed;
+}
+
+.table-cell{
+  color: black;
+  width: 33.3%;
+  display: table-cell;
+  text-align: center;
+  border-bottom-style:solid;
+}
+
+.top-cell{
+  color: black;
+  display: table-cell;
+  text-align: center;
+  border-bottom-style:solid;
+}
+
+ #table-body {
+  width: 100%;
+  display: table;
+  color: black;
+  border: solid black 2px;
+  background: white;
+  border-top-style: none;
+  margin: auto;
+  border-bottom-style: none;
+}
+
+.table-heading {
+  background-color: #007bff;
+  display: table-row;
+  display: block;
+  width: 100%;
+  border: 2px solid black;
+}
+
+.table-container{
+  background-color: transparent;
+  width: 30%;
+  display: table;
+  color: black;
+ 
+  margin: auto;
+}
+
+.picture-cell{
+  width: 85px;
+  margin: auto;
+    text-align: center;
+  border-bottom-style:solid;
+}
+
+.header{
+  display: table-cell;
+  text-align: center;
+  padding: 0px 10px 0px 115px;
+  font-weight: bold;
+}
+
+.header1{
+  display: table-cell;
+  text-align: center;
+  padding: 0px 0px 0px 150px;
+  font-weight:bold;
 }

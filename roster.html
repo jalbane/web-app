@@ -41,26 +41,30 @@
 	</nav>
 
 	<p id="roster">Roster is listed by characters of rank 'Raider' or higher. Alt characters of Officers &amp; GM may be listed below.</p>
-	<div class="roster-div">
-		<thread>
-				</thread><table id="roster-style"> 
-			<tbody><tr>
-					<th></th>
-					<th> <strong>Name</strong></th>
-					<th> Role</th>
-					<th> Spec</th>
-					
-				</tr>
-			
-			</tbody><tbody id="roster-table">
-
-			</tbody>	
-		</table>
-	</div>
-
+			<div class = "table-container">
+				<div class = heading-container>
+					<div class = "table-heading">
+						<div class = "header1">Name</div>
+						<div class = "header">Role</div>
+						<div class = "header">Spec</div>
+					</div>
+				</div>
+				<div id = "table-body">	
+				</div>
+			</div>
 	<script>
 		var token;
-		async function start(){	
+		let div
+		let div_cell
+		let node
+		let div_container
+		let overlay_container
+		let element
+		let overlay_link
+		let animation_img
+
+		async function start(){
+
 			//client id may have expired -- fixed 9/3/19
 			await fetch("https://us.battle.net/oauth/token", {
 			  body: "grant_type=client_credentials",
@@ -104,34 +108,91 @@
 				  	}
 
 				  	raider.sort((a, b) => a.name.localeCompare(b.name));
-				  	console.log(raider, j);
 
-					for (j = 0; j < raider.length; j++){	  	
-							table += '<tr><td><div class = "pic' + j + '"> <img src="https://render-us.worldofwarcraft.com/character/'+ raider[j].thumbnail +'"alt= "character tnail" style="width:80px;height:80px;"><div class="overlay' + j + '"><a id = "redirect" href="https://raider.io/characters/us/lightbringer/' + raider[j].name + '" target = "_blank"><img id = "io' + j +'" src = "https://cdnassets.raider.io/images/fb_app_image.jpg?2018-01-22" style = "width: 20px;height:20px;border:0px;"</a> </div></div></td>';
-				  			table += '<td><strong>' + raider[j].name + '</strong></td>';	
+					for (j = 0; j < raider.length; j++){	
+						//begin picture cell */
+						
+						//create table-row
+						div = document.createElement("div");
+						div.className = "table-row"	
+							
+							//create the first cell of that row	
+							div_cell = document.createElement("div")
+							div_cell.className = "picture-cell"
+							
+							//inside first cell has child container for the thumbnail
+							div_container = document.createElement('div')
+							div_container.className = "pic"+j
+								
+								//Child 'node' is the actual character image	
+								node = document.createElement('img')
+								node.src = "https://render-us.worldofwarcraft.com/character/"+ raider[j].thumbnail
+								node.style = "height:80px; width: 80px;"
+								
+								//'overlay_container' is a sibling of 'node' (parent is pic#)
+								//contains the link to raider.io page and raider.io image for 
+								//the onHover effect
+								overlay_container = document.createElement('div')
+								overlay_container.className = "overlay" + j
+									
+									//link tag is a child of 'overlay container'
+									table += '<a id = "redirect" href="https://raider.io/characters/us/lightbringer/' + raider[j].name + '" target = "_blank"><img id = "io' + j +'" src = "https://cdnassets.raider.io/images/fb_app_image.jpg?2018-01-22" style = "width: 20px;height:20px;border:0px;"</a>'
+									overlay_container.innerHTML += table
+									table = ''
+						
+						//appending the children below from lowest hierarcy
+						// ie. overlay links -> thumbnail -> pic# -> picture-cell -> table-row
+						div_container.appendChild(node)
+						div_container.appendChild(overlay_container)
+						div_cell.appendChild(div_container)
+						div.appendChild(div_cell)
+						//END of the div:"picture-cell"
 
-							try {
-								if (raider[j].roleName === 'TANK')
-					  				table += '<td>Tank</td>';
+						// Create next table cell for character name
+						div_cell = document.createElement("div")
+						div_cell.className = "table-cell"
+						node = document.createTextNode(raider[j].name);
+						//append the node to the div
+						div_cell.appendChild(node);
+						//append the div-cell to the table-row
+						div.appendChild(div_cell)
+						//END of name cell
+
+						//START of next table cell for role name
+						div_cell = document.createElement("div")
+						div_cell.className = "table-cell"
+						div.appendChild(div_cell)
+						
+						try {
+							if (raider[j].roleName === 'TANK')
+					  			node = document.createTextNode('Tank')
+					  					
+					  		else if (raider[j].roleName === 'HEALING')
+					  			node = document.createTextNode('Healer')
 					  						
-					  			else if (raider[j].roleName === 'HEALING')
-					  				table += '<td>Healer</td>';
-					  						
-					  			else if (raider[j].roleName === 'DPS')
-					  				table += '<td>Damage</td>';
-					  						
-					  			table += '<td>' + raider[j].specName + '</td></tr>';	
-							} 
-							catch (e) {
-								if(e instanceof TypeError){
-									table += '<td>N/A</td>';
-									table += '<td>N/A</td>';
-								}
+					  		else if (raider[j].roleName === 'DPS')
+					  			node = document.createTextNode('Damage')				
+					  	}
+
+					  	catch (e) {
+							if(e instanceof TypeError){
+								node = document.createTextNode('N/A')
 							}
+						}
+							
+						div_cell.appendChild(node);
+						div.appendChild(div_cell)
+							
+						//spec cell
+						div_cell = document.createElement("div")
+						div_cell.className = "table-cell"
+						node = document.createTextNode(raider[j].specName);
+						div_cell.appendChild(node);
+						div.appendChild(div_cell)
+
+						element = document.getElementById("table-body");
+						element.appendChild(div);  	
 					}
-				  	
-				  	console.log('we currently have '+ j + ' raiders');
-				  	document.getElementById("roster-table").innerHTML = table;
 				 });	
 		}		
 		start();
@@ -139,7 +200,7 @@
 	</script>
 
 
-		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.1/jquery.min.js"></script>
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.1/jquery.min.js"></script>
 		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
