@@ -80,29 +80,46 @@
 				.then(function(myJson){
 					token = myJson.access_token;
 				});
-				fetch('https://us.api.blizzard.com/wow/guild/Lightbringer/NFA?fields=members&locale=en_US&access_token=' + token)	
+				fetch('https://us.api.blizzard.com/wow/guild/lightbringer/nfa?fields=members&locale=en_US&access_token=' + token)	
 				  .then(function(response) {
 				  	return response.json();
 				  })
 				  .then(function(myJson){
-				  	
 				  	var i, j; 
 				  	var table = '';	
 				  	function Raider (name, thumbnail, roleName, specName){
 						this.name = name;
-						this.thumbnail = thumbnail;
-						this.roleName = roleName;
-						this.specName = specName;
+						this.thumbnail = thumbnail; 
+						this.role = roleName;
+						this.spec = specName;
 				  	}
-
+					let roleHandler
+					let specHandler
 				  	let raider = [];
 				  	for (i = 0, j = 0; i < myJson.members.length; i++){
 				  		if(myJson.members[i].rank !== 2 && myJson.members[i].rank < 5 ){
+				  			
 				  		//exclude guild rank 2 because that has become a rank for officer alt characters
+				  			try {
+				  				 roleHandler = (myJson.members[i].character.spec.role)
+				  			} 
+				  			catch (error){
+				  				if (error instanceof TypeError)
+				  					roleHandler = 'garbage'
+				  			}
+
+							try {
+				  				 specHandler = (myJson.members[i].character.spec.name)
+				  			} 
+				  			catch (error){
+				  				if (error instanceof TypeError)
+				  					specHandler = `Hey ${myJson.members[i].character.name}, thanks for breaking my site`
+				  			}
+
 				  			raider[j] = new Raider(myJson.members[i].character.name,
 								  				   myJson.members[i].character.thumbnail,
-								  				   myJson.members[i].character.spec.role,
-								  				   myJson.members[i].character.spec.name);
+								  				   roleHandler,
+								  				   specHandler);
 				  			j++;
 				  		}
 				  	}
@@ -164,13 +181,13 @@
 						div.appendChild(div_cell)
 						
 						try {
-							if (raider[j].roleName === 'TANK')
+							if (raider[j].role === 'TANK')
 					  			node = document.createTextNode('Tank')
 					  					
-					  		else if (raider[j].roleName === 'HEALING')
+					  		else if (raider[j].role === 'HEALING')
 					  			node = document.createTextNode('Healer')
 					  						
-					  		else if (raider[j].roleName === 'DPS')
+					  		else if (raider[j].role === 'DPS')
 					  			node = document.createTextNode('Damage')				
 					  	}
 
@@ -186,7 +203,7 @@
 						//spec cell
 						div_cell = document.createElement("div")
 						div_cell.className = "table-cell"
-						node = document.createTextNode(raider[j].specName);
+						node = document.createTextNode(raider[j].spec);
 						div_cell.appendChild(node);
 						div.appendChild(div_cell)
 
