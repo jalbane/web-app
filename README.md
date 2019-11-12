@@ -1,5 +1,5 @@
 
-## *Clear your browser cache to see my recent updates to the website* (Doesn't apply to first-time visitors)
+## *Clear your browser cache to see my recent updates to the website* ##(Doesn't apply to first-time visitors)
 
 
 https://nfaguild.herokuapp.com/index.html
