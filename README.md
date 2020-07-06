@@ -1,3 +1,5 @@
+The Blizzard API has undergone some major changes since this project was made. As a result, some of the API endpoints are no longer valid. 
+
 ## Description:
   Team website for a popular online video game. 
   Displays updated rankings, roster and additional information requested from the Blizzard API. 
